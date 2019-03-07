@@ -7,8 +7,8 @@
     <ProjectGuid>{6A073F50-7EB2-41E7-B77D-8CFFEA9F4386}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Simulador</RootNamespace>
-    <AssemblyName>Simulador</AssemblyName>
+    <RootNamespace>Simulator</RootNamespace>
+    <AssemblyName>Simulator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Generators\CongruentialGenerator.cs" />
+    <Compile Include="Generators\LinearCongruentialGenerator.cs" />
+    <Compile Include="Generators\MiddleSquareGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
