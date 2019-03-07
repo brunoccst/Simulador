@@ -1,0 +1,7 @@
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\Simulador\bin\Debug\Simulador.exe.config
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\bin\Debug\Simulador.exe.config
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\bin\Debug\Simulador.exe
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\bin\Debug\Simulador.pdb
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\obj\Debug\Simulador.csprojResolveAssemblyReference.cache
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\obj\Debug\Simulador.exe
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\obj\Debug\Simulador.pdb
