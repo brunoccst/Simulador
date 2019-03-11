@@ -23,15 +23,21 @@ namespace UnitTests
             int M = 11;
             int x0 = 4;
 
-            float[] expectedResult = { 1 };
+            float[] expectedResult = {
+                x0, 1, 3, 9, 5, 4,
+                1, 3, 9, 5, 4, 0
+            };
 
             // Act
             float[] result = Generator.Generate(a, M, x0);
 
             // Assert
-            foreach (float f1 in result)
+            Assert.AreEqual(expectedResult.Length, result.Length);
+            for (int i = 0; i < result.Length; i++)
             {
-                Assert.AreEqual(expectedResult, result);
+                float f1 = expectedResult[i];
+                float f2 = result[i];
+                Assert.AreEqual(f1, f2);
             }
         }
     }

@@ -1,1 +1,6 @@
 C:\Users\bco\Documents\GitHub\Simulador\Simulador\bin\Debug\Simulator.exe.config
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\bin\Debug\Simulator.exe
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\bin\Debug\Simulator.pdb
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\obj\Debug\Simulator.csprojResolveAssemblyReference.cache
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\obj\Debug\Simulator.exe
+C:\Users\bco\Documents\GitHub\Simulador\Simulador\obj\Debug\Simulator.pdb
