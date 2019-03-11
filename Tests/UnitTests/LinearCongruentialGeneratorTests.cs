@@ -30,7 +30,7 @@ namespace UnitTests
             };
 
             // Act
-            float[] result = Generator.Generate(a, c, M, x0);
+            float[] result = Generator.Generate(a, c, M, x0, expectedResult.Length);
 
             // Assert
             Assert.AreEqual(expectedResult.Length, result.Length);

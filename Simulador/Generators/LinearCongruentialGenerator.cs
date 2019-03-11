@@ -13,15 +13,16 @@ namespace Simulator.Generators
         /// </summary>
         /// <param name="a">The multiplier.</param>
         /// <param name="c">Constant used for a bigger variation of generated numbers.</param>
-        /// <param name="M">The quantity of numbers to be generated.</param>
+        /// <param name="M">The maximum value of number to be generated.</param>
         /// <param name="x0">The seed and first value.</param>
+        /// <param name="length">The quantity of numbers to be generated.</param>
         /// <returns>An array with the generated random numbers, <paramref name="x0"/> being the first one.</returns>
-        public float[] Generate(int a, int c, int M, float x0)
+        public float[] Generate(int a, int c, int M, float x0, int length)
         {
-            float[] x = new float[M + 1];
+            float[] x = new float[length];
 
             x[0] = x0;
-            for (int i = 1; i < M + 1; i++)
+            for (int i = 1; i < length; i++)
             {
                 x[i] = (a * x[i - 1] + c) % M;
             }
