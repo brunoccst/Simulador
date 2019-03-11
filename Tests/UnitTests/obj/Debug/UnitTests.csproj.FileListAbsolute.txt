@@ -1,9 +1,7 @@
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\bin\Debug\UnitTests.dll
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\bin\Debug\UnitTests.pdb
-C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\bin\Debug\Simulator.exe
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\bin\Debug\Simulator.pdb
-C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\obj\Debug\UnitTests.pdb

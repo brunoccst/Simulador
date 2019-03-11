@@ -25,7 +25,7 @@ namespace Simulator.Generators
             float[] x = new float[M + 1];
 
             x[0] = x0;
-            for (int i = 1; i < M; i++)
+            for (int i = 1; i < M + 1; i++)
             {
                 x[i] = a * x[i - 1] % M;
             }

@@ -5,31 +5,32 @@ using Simulator.Generators;
 namespace UnitTests
 {
     [TestClass]
-    public class CongruentialGeneratorTests
+    public class LinearCongruentialGeneratorTests
     {
-        public CongruentialGenerator Generator { get; set; }
+        public LinearCongruentialGenerator Generator { get; set; }
 
         [TestInitialize]
         public void Initialize()
         {
-            Generator = new CongruentialGenerator();
+            Generator = new LinearCongruentialGenerator();
         }
 
         [TestMethod]
-        public void Test_3_11_4()
+        public void Test_4_9_4_7()
         {
             // Arrange
-            int a = 3;
-            int M = 11;
-            int x0 = 4;
+            int a = 4;
+            int M = 9;
+            int c = 4;
+            int x0 = 7;
 
             float[] expectedResult = {
-                x0, 1, 3, 9, 5, 4,
-                1, 3, 9, 5, 4, 1
+                x0, 5, 6, 1, 8,
+                0, 4, 2, 3, 7
             };
 
             // Act
-            float[] result = Generator.Generate(a, M, x0);
+            float[] result = Generator.Generate(a, c, M, x0);
 
             // Assert
             Assert.AreEqual(expectedResult.Length, result.Length);
