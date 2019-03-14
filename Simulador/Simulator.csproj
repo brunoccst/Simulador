@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercises\Exercise1.cs" />
+    <Compile Include="Exercises\IExercise.cs" />
     <Compile Include="Generators\CongruentialGenerator.cs" />
     <Compile Include="Generators\LinearCongruentialGenerator.cs" />
     <Compile Include="Generators\MiddleSquareGenerator.cs" />
