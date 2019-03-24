@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator", "Simulador\Simulator.csproj", "{6A073F50-7EB2-41E7-B77D-8CFFEA9F4386}"
 EndProject
@@ -34,5 +34,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F9EA4D31-FE0C-4636-8E3E-BEF7DE97913A} = {6A84C172-9FB3-4E60-B537-A3CACD71B4E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB619A8F-CCAC-4E7F-946A-7BEEE981F3B1}
 	EndGlobalSection
 EndGlobal

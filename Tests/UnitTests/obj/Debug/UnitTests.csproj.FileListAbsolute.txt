@@ -5,3 +5,13 @@ C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\bin\Debug\Simulator.pdb
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\bco\Documents\GitHub\Simulador\Tests\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\bin\Debug\Simulator.exe
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\bin\Debug\Simulator.pdb
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\bin\Debug\Simulator.exe.config
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.csprojAssemblyReference.cache
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.csproj.CopyComplete
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.pdb
