@@ -15,6 +15,8 @@ namespace Simulator
 
         private const int expectedParams = 6;
 
+        private static QueueNetworkSimulator qNS { get; set; }
+
         private static List<Exception> handleArgs(string[] args)
         {
             List<Exception> exceptions = new List<Exception>();
@@ -140,11 +142,13 @@ namespace Simulator
                 {
                     Console.WriteLine("   * {0}", ex.Message);
                 }
-                Console.WriteLine("Please, run the program like: 'Program <clients arrival start> <clients arrival end> <clients attendence start> <clients attendence end> <number of servers> <queue's capacity>'");
+                Console.WriteLine("Please, run the program like: 'Simulator <clients arrival start> <clients arrival end> <clients attendence start> <clients attendence end> <number of servers> <queue's capacity>'");
                 Console.ReadLine();
                 return;
             }
 
+            qNS = new QueueNetworkSimulator();
+            qNS.Run(clientArrival, clientAttendence, serverCount, queueCapacity);
         }
     }
 }
