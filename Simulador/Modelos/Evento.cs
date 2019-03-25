@@ -35,7 +35,18 @@ namespace Simulador.Modelos
         /// <summary>
         /// Tempo gasto do evento.
         /// </summary>
-        public int Tempo { get; set; }
+        public double Tempo { get; set; }
+
+        /// <summary>
+        /// Cria uma nova instância.
+        /// </summary>
+        /// <param name="tipo">Tipo.</param>
+        /// <param name="tempo">Tempo</param>
+        public Evento(TipoDeEvento tipo, double tempo)
+        {
+            Tipo = tipo;
+            Tempo = tempo;
+        }
 
     }
 }

@@ -2,6 +2,7 @@
 using Simulador.Modelos;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Simulador
@@ -22,10 +23,14 @@ namespace Simulador
             // Gera a lista de números aleatórios.
             GeradorCongruenteLinear gcl = new GeradorCongruenteLinear();
             double[] numerosAleatorios = gcl.Gerar(5, 75, 1, 0.52235, 10);
+            List<double> listaDeNumerosAleatorios = numerosAleatorios.ToList();
 
             // Cria o simulador e executa conforme as configurações.
-            SimuladorDeRedeDeFilas simulador = new SimuladorDeRedeDeFilas();
-            simulador.Executar(fila, estadoInicial, numerosAleatorios);
+            SimuladorDeRedeDeFilas simulador = new SimuladorDeRedeDeFilas(fila, estadoInicial, listaDeNumerosAleatorios);
+            simulador.Executar();
+
+            Console.WriteLine("Aperte qualquer tecla para encerrar.");
+            Console.ReadKey();
         }
 
         /// <summary>
