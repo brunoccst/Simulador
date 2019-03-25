@@ -6,3 +6,6 @@
 /.vs/Simulador/v15
 /Simulador/bin/Debug
 /Tests/UnitTests/obj/Debug/build.force
+/Simulador/obj/Debug
+/Tests/UnitTests/bin/Debug/Simulador.exe
+/Tests/UnitTests/bin/Debug/Simulador.pdb

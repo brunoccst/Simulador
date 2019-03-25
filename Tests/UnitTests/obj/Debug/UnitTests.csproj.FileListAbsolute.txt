@@ -15,3 +15,10 @@ C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.csproj
 C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.csproj.CopyComplete
 C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\Bruno\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\bco\Source\Repos\Simulador\Tests\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\bco\Source\Repos\Simulador\Tests\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\bco\Source\Repos\Simulador\Tests\UnitTests\bin\Debug\Simulador.exe
+C:\Users\bco\Source\Repos\Simulador\Tests\UnitTests\bin\Debug\Simulador.pdb
+C:\Users\bco\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\bco\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\bco\Source\Repos\Simulador\Tests\UnitTests\obj\Debug\UnitTests.pdb
