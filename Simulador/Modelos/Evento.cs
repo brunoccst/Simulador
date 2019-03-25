@@ -12,14 +12,14 @@ namespace Simulador.Modelos
     public enum TipoDeEvento
     {
         /// <summary>
-        /// Uma chegada de cliente na fila.
+        /// Uma chegada de cliente.
         /// </summary>
         CHEGADA,
 
         /// <summary>
-        /// Um atendimento de cliente.
+        /// Uma saída de cliente.
         /// </summary>
-        ATENDIMENTO
+        SAIDA
     }
 
     /// <summary>

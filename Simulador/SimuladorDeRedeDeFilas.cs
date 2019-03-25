@@ -76,46 +76,74 @@ namespace Simulador
             Console.WriteLine(fila.ToString());
             Console.WriteLine("Estado inicial: " + estadoInicial);
             Console.WriteLine("Números aleatórios: [" + string.Join(",", numerosAleatorios) + "]");
+            Console.WriteLine("----------------------");
 
             // Inicia a fila pelo estado inicial;
             chegada(estadoInicial);
 
+            double menorTempo = 0;
+            int posMenor = 0;
+
             // Executa até todos os números aleatórios serem utilizados.
             while (numerosAleatorios.Count > 0)
             {
-                // Separa o evento de menor tempo.
-                double menorTempo = 0;
-                int posMenor = 0;
-                for (int i = 0; i < listaDeEventos.Count; i++)
+                // Se a fila já atingiu sua capacidade..
+                if (fila.QuantidadeDeClientes == fila.Capacidade)
                 {
-                    if (listaDeEventos[posMenor].Tempo > listaDeEventos[i].Tempo)
+                    menorTempo = listaDeEventos[0].Tempo;
+                    posMenor = 0;
+
+                    // Separa o evento de menor tempo.
+                    for (int i = 0; i < listaDeEventos.Count; i++)
                     {
-                        menorTempo = listaDeEventos[i].Tempo;
-                        posMenor = i;
+                        if (listaDeEventos[posMenor].Tempo > listaDeEventos[i].Tempo)
+                        {
+                            menorTempo = listaDeEventos[i].Tempo;
+                            posMenor = i;
+                        }
                     }
 
-                }
-
-                // Gerencia as chegadas.
-                if (listaDeEventos[posMenor].Tipo == TipoDeEvento.CHEGADA)
-                {
-                    if (fila.QuantidadeDeClientes == fila.Capacidade)
+                    // Executa chegada ou saída dependendo do evento.
+                    if (listaDeEventos[posMenor].Tipo == TipoDeEvento.CHEGADA)
                     {
                         perda++;
+                        listaDeEventos.RemoveAt(posMenor);
+                        chegada(menorTempo);
                     }
                     else
+                    {
+                        saida(menorTempo);
+                        listaDeEventos.RemoveAt(posMenor);
+                    }
+                }
+                // Se não, caso ainda não esteja cheia..
+                else
+                {
+                    menorTempo = listaDeEventos[0].Tempo;
+                    posMenor = 0;
+                    for (int i = 0; i < listaDeEventos.Count; i++)
+                    {
+                        if (listaDeEventos[posMenor].Tempo > listaDeEventos[i].Tempo)
+                        {
+                            menorTempo = listaDeEventos[i].Tempo;
+                            posMenor = i;
+                        }
+
+                    }
+
+                    // Executa chegada ou saída dependendo do evento.
+                    if (listaDeEventos[posMenor].Tipo == TipoDeEvento.CHEGADA)
                     {
                         chegada(menorTempo);
                         listaDeEventos.RemoveAt(posMenor);
                     }
-
-                }
-
-                // Gerencia as saídas.
-                if (listaDeEventos[posMenor].Tipo == TipoDeEvento.ATENDIMENTO)
-                {
-                    saida(menorTempo);
-                    listaDeEventos.RemoveAt(posMenor);
+                    else
+                    {
+                        saida(menorTempo);
+                        listaDeEventos.RemoveAt(posMenor);
+                    }
+                    menorTempo = 0;
+                    posMenor = 0;
                 }
             }
 
@@ -168,8 +196,8 @@ namespace Simulador
             double aux = numerosAleatorios.First();
             numerosAleatorios.RemoveAt(0);
 
-            double resultado = (fila.Chegada.Maximo - fila.Chegada.Minimo * aux) + fila.Chegada.Minimo;
-            Evento evento = new Evento(TipoDeEvento.CHEGADA, resultado);
+            double tempoResultante = tempoTotal + (fila.Chegada.Maximo - fila.Chegada.Minimo * aux) + fila.Chegada.Minimo;
+            Evento evento = new Evento(TipoDeEvento.CHEGADA, tempoResultante);
             listaDeEventos.Add(evento);
         }
 
@@ -181,8 +209,8 @@ namespace Simulador
             double aux = numerosAleatorios.First();
             numerosAleatorios.RemoveAt(0);
 
-            double result = (fila.Atendimento.Maximo - fila.Atendimento.Minimo * aux) + fila.Atendimento.Minimo;
-            Evento evento = new Evento(TipoDeEvento.ATENDIMENTO, result);
+            double tempoResultante = tempoTotal + (fila.Atendimento.Maximo - fila.Atendimento.Minimo * aux) + fila.Atendimento.Minimo;
+            Evento evento = new Evento(TipoDeEvento.SAIDA, tempoResultante);
             listaDeEventos.Add(evento);
         }
 
@@ -192,9 +220,13 @@ namespace Simulador
         /// <param name="tempo">Tempo.</param>
         private void contabilizaTempo(double tempo)
         {
-            tempoTotal += tempo;
             int aux = fila.QuantidadeDeClientes;
-            temposDaFila[aux] = tempo - aux;
+
+            double tempoAnterior = tempoTotal;
+            tempoTotal = tempo;
+            double posTemAux = tempoTotal - tempoAnterior;
+            double tempoAux = temposDaFila[aux] + posTemAux;
+            temposDaFila[aux] = tempoAux;
         }
     }
 }
