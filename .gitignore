@@ -4,3 +4,5 @@
 
 /.vs/Simulador/v15/Server/sqlite3
 /.vs/Simulador/v15
+/Simulador/bin/Debug
+/Tests/UnitTests/obj/Debug/build.force
