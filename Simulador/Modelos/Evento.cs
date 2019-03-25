@@ -14,12 +14,12 @@ namespace Simulador.Modelos
         /// <summary>
         /// Uma chegada de cliente.
         /// </summary>
-        CHEGADA,
+        CHEGADA = 1,
 
         /// <summary>
         /// Uma saída de cliente.
         /// </summary>
-        SAIDA
+        SAIDA = 0
     }
 
     /// <summary>

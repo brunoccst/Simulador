@@ -22,7 +22,7 @@ namespace Simulador
 
             // Gera a lista de números aleatórios.
             GeradorCongruenteLinear gcl = new GeradorCongruenteLinear();
-            double[] numerosAleatorios = gcl.Gerar(5, 75, 1, 0.52235, 10);
+            double[] numerosAleatorios = gcl.Gerar(5, 75, 1, 0.52235, 100000);
             List<double> listaDeNumerosAleatorios = numerosAleatorios.ToList();
 
             // Cria o simulador e executa conforme as configurações.

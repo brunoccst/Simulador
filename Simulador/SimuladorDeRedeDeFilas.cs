@@ -75,7 +75,7 @@ namespace Simulador
         {
             Console.WriteLine(fila.ToString());
             Console.WriteLine("Estado inicial: " + estadoInicial);
-            Console.WriteLine("Números aleatórios: [" + string.Join(",", numerosAleatorios) + "]");
+            //Console.WriteLine("Números aleatórios: [" + string.Join(",", numerosAleatorios) + "]");
             Console.WriteLine("----------------------");
 
             // Inicia a fila pelo estado inicial;
